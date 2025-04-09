@@ -1,0 +1,19 @@
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        # Флаг для оптимизации (если массив уже отсортирован)
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                # Меняем элементы местами
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        # Если не было обменов, массив отсортирован
+        if not swapped:
+            break
+    return arr
+
+# Пример использования
+numbers = [89, 56, 110, 156, 6, 5, 23, 65]
+sorted_numbers = bubble_sort(numbers)
+print("Отсортированный массив:", sorted_nu
