@@ -16,4 +16,4 @@ def bubble_sort(arr):
 # Пример использования
 numbers = [89, 56, 110, 156, 6, 5, 23, 65]
 sorted_numbers = bubble_sort(numbers)
-print("Отсортированный массив:", sorted_nu
+print("Отсортированный массив:", sorted_numbers)
